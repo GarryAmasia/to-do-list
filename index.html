@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do-list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="title">
+            <h1>not-to-do-list</h1>
+        </div>
+
+        <div class="user-input">
+            <form action="javascript:void(0)" onsubmit="handleOnSubmit(this)">
+                <input type="text" class="task-class" name="task" placeholder="Task name" required>
+                <input type="number" class="hour-class" name="hour" placeholder="Task hours" required>
+                <input type="submit" value="Click to add">
+            </form>
+        </div>
+
+        <hr />
+
+        <div class="content">
+            <div class="content-left">
+                <h3>to-do-list</h3>
+                <ul id="task-list">
+                    <!-- <li>
+                        <div class="items">
+                            <span class="item">
+                                <input type="checkbox">
+                                <label for="">watching tv</label>
+                            </span>
+                            <span class="hour"> 4 hour</span>
+                        </div>
+                    </li> -->
+                </ul>
+                <hr />
+                total hours allocated <span id="totalhours"></span>hours
+            </div>
+            <div class="content-right">
+                <h3>not-to-do-list</h3>
+                <ul id="bad-list"></ul>
+                <hr />
+                total hours allocated <span id="totalbadhours"></span>hours
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
